@@ -21,7 +21,7 @@ const Counter = () => {
   ];
 
   return (
-    <section className="m-16 py-12  bg-gray-50">
+    <section className="m-16 py-12  rounded-lg bg-gray-50">
       <div className="w-[85%] mx-auto px-6">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
           {counters.map((counter, index) => (

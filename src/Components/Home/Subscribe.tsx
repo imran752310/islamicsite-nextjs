@@ -127,7 +127,7 @@ const NewsletterSection = () => {
       <div className="hidden mx-10 rounded-lg opacity-5 h-[300px] lg:h-[300px] bg-[url('/overly.jpg')] bg-cover bg-center overflow-hidden  "></div>
 
       {/* Content */}
-      <div className="lg:absolute top-0 inset-0 px-6 sm:px-10 md:px-20 flex flex-col-reverse z-10 lg:flex-row items-center">
+      <div data-aos="zoom-out" className="lg:absolute top-0 inset-0 px-6 sm:px-10 md:px-20 flex flex-col-reverse z-10 lg:flex-row items-center">
         {/* Left Content */}
         <div className="max-w-4xl mx-auto flex  flex-col items-center ">
           <h2 className="text-white text-lg font-semibold uppercase">
@@ -150,7 +150,7 @@ const NewsletterSection = () => {
             </div>
             <button
               type="submit"
-              className="bg-white text-green-600 px-6 py-3 rounded-md font-medium hover:bg-green-100"
+              className="bg-white text-green-600 px-6 py-3 rounded-md font-medium hover:bg-green-900 hover:text-white cursor-pointer"
             >
               Subscribe
             </button>

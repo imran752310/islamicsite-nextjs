@@ -1,19 +1,39 @@
-import About from "@/Components/Home/About";
-import Blog from "@/Components/Home/Blogs";
-import Counter from "@/Components/Home/Counter";
-import Hero from "@/Components/Home/Hero";
-import IslamicPillars from "@/Components/Home/IslamicPillars";
-import PrayerTimes from "@/Components/Home/PrayTime";
-import NewsletterSection from "@/Components/Home/Subscribe";
+"use client"
+
+
+import About from '@/Components/Home/About';
+import Blog from '@/Components/Home/Blogs';
+import Counter from '@/Components/Home/Counter';
+import HeroSection from '@/Components/Home/Hero';
+import IslamicPillars from '@/Components/Home/IslamicPillars';
+import PrayerTimes from '@/Components/Home/PrayTime';
+import Services from '@/Components/Home/Services';
+import NewsletterSection from '@/Components/Home/Subscribe';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from "react";
 
 export default function Home() {
-  return <div>
-    <Hero />
-    <IslamicPillars />
-    <About />
+
+  useEffect(() => {
+    AOS.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
+
+  return (
+    <>
+    <HeroSection/>
+    <IslamicPillars/>
+    <About/>
     <PrayerTimes />
-    <Blog />
-    <Counter />
-    <NewsletterSection />
-  </div>;
+    <Services />
+    <Blog/>
+    <Counter/>
+    <NewsletterSection/>
+    
+
+    </>
+  );
 }
