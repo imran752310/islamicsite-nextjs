@@ -24,19 +24,19 @@ export  const blogs = [
 
    export   const counters = [
         {
-          value: "1250",
+          value: 1250,
           label: "Activate Students",
         },
         {
-          value: "60",
+          value: 60,
           label: "New Mosque",
         },
         {
-          value: "531",
+          value: 531,
           label: "Scholarship Application",
         },
         {
-          value: "30",
+          value: 30,
           label: "Certified Teachers",
         },
       ]
