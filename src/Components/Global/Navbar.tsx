@@ -18,8 +18,8 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav className=" text-base font-semibold hidden md:flex space-x-6 ">
-          <a href="#" className="text-gray-800 hover:text-[#0E820E]">
+        <nav className=" text-base  hidden md:flex space-x-6 ">
+          <a href="#" className="text-gray-800  hover:text-[#0E820E]">
             Home
           </a>
           <a href="#" className="text-gray-800 hover:text-[#0E820E]">
