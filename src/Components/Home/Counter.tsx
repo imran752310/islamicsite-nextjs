@@ -1,9 +1,11 @@
 import React from "react";
 
+import CountUp from "react-countup";
+
 const Counter = () => {
   const counters = [
     {
-      value: "1,250",
+      value: "1250",
       label: "Activate Students",
     },
     {
@@ -27,8 +29,16 @@ const Counter = () => {
           {counters.map((counter, index) => (
             <div key={index}>
               <h3 className="text-4xl font-bold text-gray-800">
-                {counter.value}
-                <span className="text-green-500 text-3xl">+</span>
+                <CountUp start={0} end={counter.value} delay={0}>
+                  {({ countUpRef }) => (
+                    <div>
+                      <span ref={countUpRef} />
+                      <span className="text-green-500 text-3xl">+</span>
+                    </div>
+                  )}
+                </CountUp>
+                {/* {counter.value} */}
+               
               </h3>
               <p className="text-gray-600 mt-2">{counter.label}</p>
             </div>
