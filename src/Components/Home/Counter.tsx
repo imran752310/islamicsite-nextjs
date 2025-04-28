@@ -1,27 +1,10 @@
+import { counters } from "@/constant/constant";
 import React from "react";
 
 import CountUp from "react-countup";
 
 const Counter = () => {
-  const counters = [
-    {
-      value: "1250",
-      label: "Activate Students",
-    },
-    {
-      value: "60",
-      label: "New Mosque",
-    },
-    {
-      value: "531",
-      label: "Scholarship Application",
-    },
-    {
-      value: "30",
-      label: "Certified Teachers",
-    },
-  ];
-
+  
   return (
     <section className="m-16 py-12  rounded-lg bg-gray-50">
       <div className="w-[85%] mx-auto px-6">

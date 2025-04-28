@@ -1,39 +1,14 @@
+import { blogs } from "@/constant/constant";
 import Image from "next/image";
 import React from "react";
+import SectionHeading from "../Helper/SectionHeading";
 
 const Blog = () => {
-  const blogs = [
-    {
-      image: "/blog1.jpg", // Replace with your image paths
-      title: "Tafseer Of Quran By Mustafa Al Qazi",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dignissim lectus. Pellentesque et scelerisque nunc...",
-      link: "#",
-    },
-    {
-      image: "/blog2.jpg", // Replace with your image paths
-      title: "Uses Of The Quran Hadith Of Daily Life",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dignissim lectus. Pellentesque et scelerisque nunc...",
-      link: "#",
-    },
-    {
-      image: "/blog3.jpg", // Replace with your image paths
-      title: "Salat Is The Best Exercise For Body",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dignissim lectus. Pellentesque et scelerisque nunc...",
-      link: "#",
-    },
-  ];
-
   return (
     <section className="py-12 ">
       <div className="w-[70%] mx-auto px-6 ">
         <div className="text-center">
-          <p className="text-[#0E820E] text-lg font-semibold">Our Blog</p>
-          <h2 className="text-3xl font-bold font-serif text-gray-800 mb-4">
-            Latest Blog & Articles
-          </h2>
+           <SectionHeading Heading=" Latest Blog & Articles" paregraph="Our Blog" />
           <p className="text-gray-600 mb-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod <br />
@@ -46,7 +21,7 @@ const Blog = () => {
               data-aos="flip-left"
               data-aos-duration="2000"
               key={index}
-              className="bg-white rounded-lg  transition duration-300"
+              className="bg-white rounded-lg  transition duration-300 hover:shadow p-4"
             >
               <Image
                 src={blog.image}

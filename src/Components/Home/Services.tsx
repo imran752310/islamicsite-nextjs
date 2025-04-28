@@ -1,53 +1,18 @@
+import { services } from "@/constant/constant";
 import Image from "next/image";
 import React from "react";
+import SectionHeading from "../Helper/SectionHeading";
 
 const Services = () => {
-  const services = [
-    {
-      title: "Quran Learning",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-      icon: "/service1.png",
-    },
-    {
-      title: "Funeral Service",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-      icon: "/service2.png", // Replace with a suitable icon or SVG
-    },
-    {
-      title: "Mosque Development",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-      icon: "/service3.png", // Replace with a suitable icon or SVG
-    },
-    {
-      title: "Charity & Donations",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-      icon: "/service4.png", // Replace with a suitable icon or SVG
-    },
-    {
-      title: "Scholarship",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-      icon: "/service5.png", // Replace with a suitable icon or SVG
-    },
-    {
-      title: "Hadith School",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-      icon: "/service6.png", // Replace with a suitable icon or SVG
-    },
-  ];
+ 
 
   return (
     <section className="py-12 bg-gray-50">
       <div className="w-[70%] mx-auto px-4 text-center">
         {/* Header */}
         <div>
-          <p className="text-green-600 text-lg font-semibold">What We Offer</p>
-          <h2 className="text-4xl font-bold mt-2 mb-6">Our Popular Services</h2>
+          
+          <SectionHeading Heading="Our Popular Services" paregraph="What We Offer" />
           <p className="text-gray-600 max-w-2xl mx-auto mb-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
