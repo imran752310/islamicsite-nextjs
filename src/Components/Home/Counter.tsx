@@ -1,0 +1,42 @@
+import React from "react";
+
+const Counter = () => {
+  const counters = [
+    {
+      value: "1,250",
+      label: "Activate Students",
+    },
+    {
+      value: "60",
+      label: "New Mosque",
+    },
+    {
+      value: "531",
+      label: "Scholarship Application",
+    },
+    {
+      value: "30",
+      label: "Certified Teachers",
+    },
+  ];
+
+  return (
+    <section className="m-16 py-12  bg-gray-50">
+      <div className="w-[85%] mx-auto px-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+          {counters.map((counter, index) => (
+            <div key={index}>
+              <h3 className="text-4xl font-bold text-gray-800">
+                {counter.value}
+                <span className="text-green-500 text-3xl">+</span>
+              </h3>
+              <p className="text-gray-600 mt-2">{counter.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Counter;
